@@ -1,0 +1,287 @@
+@charset "ISO-8859-1";
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;1,200&display=swap');
+/*font-family: 'Nunito Sans', sans-serif;*/
+/* _____________navbar_______________ */
+body{
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+nav{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid white;
+    height: 70px;
+    background-color: maroon;
+    width: 100vw;
+    align-items: center;
+	top:0;
+	left:0;
+}
+.nav-logo{
+    border-radius: 50%;
+    border: none;
+    height: 80%;
+    width: 60px;
+    margin: auto 3px;
+}
+.nav-links{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    font-weight: bold;
+}
+.nav-link{
+    color: white;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-link-margin{
+    margin: auto 10%;
+}
+.nav-title{
+    color: whitesmoke;
+    width: 30%;
+    font-size: 13px;
+    align-items: center;
+    height: 80%;
+    margin: auto;
+}
+@media(max-width: 586px){
+    .nav-title{
+        color: whitesmoke;
+        width: 35%;
+        font-weight: 5px;
+        align-items: center;
+        height: 80%;
+        margin: auto;
+    }
+    .nav-logo{
+        width: 15%;
+    }
+    .nav-links{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    font-weight: bold;
+    }
+}
+/* _____________navbar_______________ */
+.center{
+	text-align: center;
+}
+.mt-10{
+	margin-top: 10px;
+}
+.mt-20{
+	margin-top: 20px;
+}
+.container{
+	display: fixed;
+	max-height:100%;
+	height: 662px;
+   	width: 100%;
+	max-width: 100%;
+	background-color: maroon;
+    display: flex;
+    flex-wrap: wrap;
+	padding: 15px;
+	box-sizing: border-box;
+}
+#LoginAndRegistrationForm{
+	display: fixed;
+	max-width: 400px;
+	width: 100%;
+	height: 80%;
+    background: #f5f5f5;
+	margin: 80px auto;
+	border-radius: 10px;
+	box-sizing: border-box;
+	padding: 1px 12px;
+	box-shadow: 0px 0px 6px 0px #cdcdcd;
+    display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+#formTitle{
+	height: 10px;
+	font-family: 'Nunito Sans', sans-serif;
+	font-weight: bolder;
+	letter-spacing: 1px;
+	font-size: 25px;
+    color: #800000;
+	margin-top: 5px;
+	
+}
+
+#formSwitchBtn{
+	display: flex;
+	justify-content: center;
+	padding: 20px 0px;
+    flex-wrap: wrap;
+}
+#formSwitchBtn button{
+	font-size: 17px;
+	letter-spacing: 1px;
+	font-family: 'Nunito Sans', sans-serif;
+	font-weight: bolder;
+	width: 160px;
+	height: 40px;
+	border: 0px;
+	cursor: pointer;
+	position: relative;
+	background: transparent;
+    background-color: gainsboro;
+	transition: 0.4s;
+	flex-basis: 50%;
+	max-width: 200px;
+}
+#formSwitchBtn .active{
+	color: #fff;
+	background-color: #800000;
+}
+#RadioButtons{
+	width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	gap: 25%;
+	flex-wrap: wrap;
+	margin-bottom: 4%;
+	letter-spacing: 1px;
+	font-family: 'Nunito Sans', sans-serif;
+	font-weight: bolder;
+}
+.input-text{
+	width: 100%;
+	height: 38px;
+	border: 0px;
+	border: 1px solid #800000;
+	box-sizing: border-box;
+	padding: 5px;
+	border-radius: 5px;
+	font-size: 17px;
+	font-family: 'Nunito Sans', sans-serif;
+}
+.password-container-toggle{
+	display: flex;
+	align-items: center;
+}
+.password-toggle{
+	cursor: pointer;
+    width: 26px;
+    height: 16px;
+	margin-top: 12px;
+	margin-left: -28px;
+}
+.input-text:focus{
+	outline: none;
+}
+
+.forgot-pass-remember-me{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	gap: 90px;
+	font-size: 14px;
+}
+
+.forgot-pass-remember-me #ForgotPassword{
+    color: #a52a2a; 
+	font-weight: bold;
+	transition: 0.4s;
+	font-size: 14px;
+}
+.forgot-pass-remember-me #ForgotPassword:hover{
+	color: #008d7f;
+}
+
+.forgot-pass-remember-me input{
+	height: 12px;
+}
+.forgot-pass-remember-me label{
+    color: #800000;
+    font-family: 'Nunito Sans', sans-serif;
+}
+.forgot-pass-remember-me a{
+	text-decoration: none;
+	font-family: 'Nunito Sans', sans-serif;
+	font-style: italic;
+}
+.Submit-Btn{
+	width: 100%;
+	height: 42px;
+	border: 0px;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 17px;
+	letter-spacing: 1px;
+	font-family: 'Nunito Sans', sans-serif;
+	font-weight: bolder;
+	transition: 0.4s;
+    background-color: #800000;
+	color: #fff;
+}
+.Submit-Btn:hover{
+    background-color: #a52a2a;
+	color: #fff;
+	
+}
+.dont-have-account,
+.already-have-account{
+	font-family: 'Nunito Sans', sans-serif;
+	letter-spacing: 0.3px;
+	font-size: 14px;
+	color: #747474;
+}
+.dont-have-account a,
+.already-have-account a{
+	font-family: 'Nunito Sans', sans-serif;
+	font-style: italic !important;
+	text-decoration: none;
+    color: #800000;
+	font-weight: bold;
+	transition: 0.4s;
+}
+.dont-have-account a:hover,
+.already-have-account a:hover{
+	color: #008d7f;
+}
+
+#RegistrationFrom,
+#ForgotPasswordForm{
+	display: none;
+}
+.error-input{
+	border: 1px solid #ff5b5b;
+}
+.error-message{
+	font-size: 11px; 
+	font-weight: bold; 
+	color: #ff5b5b;
+	text-align: left; 
+	margin: 0px; 
+	padding: 0px; 
+	margin-top: 2px; 
+}
+.logout-btn{
+	color: white;
+	background-color: maroon;
+	border-radius: 20px;
+	border: none;
+	position: fixed;
+	bottom: 2%;
+	right: 2%;
+	
+	
+}
+
+
+  
